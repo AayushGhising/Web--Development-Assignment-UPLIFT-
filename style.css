@@ -1,0 +1,344 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: whitesmoke; */
+  margin: 0;
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: whitesmoke;
+}
+
+/* Nav Bar */
+.nav_bar {
+  height: 80px;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  background-color: whitesmoke;
+}
+.logo {
+  /* position: fixed; */
+  height: 75px;
+  /* margin-left: 0px; */
+  /* left: 40px; */
+}
+.nav_bar a {
+  color: rgb(36, 76, 128);
+  text-decoration: none;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  padding: 10px;
+  /* font-weight: 600; */
+}
+
+.nav_bar a:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.loginAndlinks {
+  /* position: fixed; */
+  /* right: 40px; */
+  /* top: 25px; */
+  display: flex;
+  align-items: center;
+}
+.login {
+  border: none;
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login:hover {
+  background-color: rgb(36, 76, 128);
+}
+.nav_bar a.active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Home Page */
+/* Home Page First Section */
+.first_section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+.first_section .text_content {
+  max-width: 65%;
+}
+.first_section h1,
+.first_section h2,
+.first_section p,
+.first_section .get_started {
+  margin: 10px 0;
+}
+.first_section h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(22, 50, 91);
+}
+.first_section h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.first_section p {
+  text-align: justify;
+  padding: 20px 0px;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.first_section .get_started {
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.first_section .get_started:hover {
+  background-color: rgb(36, 76, 128);
+}
+
+.first_section img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Home Page Cards */
+.cards_row {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 50px;
+}
+.cards_row .card1,
+.cards_row .card2,
+.cards_row .card3 {
+  margin-right: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+  text-align: justify;
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.cards_row .card4 {
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+  text-align: justify;
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.cards_row .card-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.cards_row .btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  /* margin-top: auto; */
+}
+
+/* Booking Free Therapy Form */
+.book_therapy {
+  border: 2px solid rgb(69, 69, 69);
+  padding: 40px;
+  margin: 0px 50px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_therapy h1 {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.book_therapy .left-column,
+.book_therapy .right-column {
+  width: 45%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.book_therapy .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.book_therapy label {
+  width: 30%; /* Adjust the percentage as needed */
+  font-weight: bold;
+  text-align: left;
+}
+
+.book_therapy input {
+  width: 70%; /* Make input fields take up the remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book_therapy button {
+  width: 500px;
+  padding: 10px;
+  background-color: rgb(22, 50, 91);
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.book_therapy button:disabled {
+  background-color: rgb(150, 150, 150);
+  cursor: not-allowed;
+}
+
+.book_therapy button:hover:enabled {
+  background-color: rgb(36, 76, 128);
+}
+
+/* Confirmation Bar */
+.confirmation-bar {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  /* align-items: center; */
+  /* align-content: center; */
+}
+
+.confirmation-bar.hidden {
+  display: none;
+}
+.confirmation-bar span {
+  flex-grow: 1;
+}
+
+.confirmation-bar button {
+  background-color: rgb(255, 77, 77);
+  color: whitesmoke;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  flex-shrink: 0;
+  width: auto;
+  position: relative;
+  top: -8px;
+}
+
+#confirmationBar button:hover {
+  background-color: rgb(255, 4, 0);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgb(48, 48, 48);
+  padding: 20px 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .left-column-footer h3 {
+  font-size: 22px;
+}
+
+/* Resource Page */
+.resources-heading1 {
+  margin: 100px 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+.resources-heading3 {
+  margin: 0 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.resources-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0px 50px;
+  /* flex-direction: column; */
+}
+.resources-sections h3 {
+  width: 100vb;
+  /* display: block; */
+  margin-bottom: 20px;
+}
+.resources-sections .card01,
+.resources-sections .card02,
+.resources-sections .card03,
+.resources-sections .card04 {
+  margin-right: 120px;
+  padding: 10px 0px;
+  text-align: justify;
+  flex-basis: 19%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resources-sections .card05 {
+  flex-basis: 19%;
+  padding: 10px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sections-card-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.resources-sections a {
+  text-decoration: none;
+  color: black;
+}
