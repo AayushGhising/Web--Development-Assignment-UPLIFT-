@@ -164,6 +164,8 @@ body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  background-color: rgb(22, 50, 91);
+  border: none;
   /* margin-top: auto; */
 }
 
@@ -345,7 +347,9 @@ body {
 }
 
 /* Self-Assesment */
-.self-assessment-title {
+.self-assessment-title,
+.professional-director-title {
+  /*also contains professional director page */
   display: flex;
   margin: 100px 50px;
   justify-content: space-between;
@@ -355,12 +359,14 @@ body {
 .self-assessment-title h1 {
   margin-right: 50px;
 }
-.self-assessment-title .self-assessment-categories button {
+.self-assessment-title .self-assessment-categories button,
+.professional-director-title .professional-director-categories button {
   margin: 2px 5px;
   background-color: rgb(217, 217, 217);
   border: none;
   border-radius: 5px;
 }
+
 .self-assessment-activities {
   display: flex;
   justify-content: space-between;
@@ -482,6 +488,7 @@ body {
   position: relative;
   top: 10px;
 }
+
 .user-forum .interactions img {
   width: 20px;
 }
@@ -489,4 +496,89 @@ body {
   border: none;
   margin-right: 10px;
   background: none;
+}
+
+/* Professional Director */
+.recommended-doctor h4,
+.recommended-hospitals h4 {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.professional-doctors {
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 50px;
+}
+.professional-doctors img {
+  align-self: center;
+}
+.professional-doctors .card1,
+.professional-doctors .card2,
+.professional-doctors .card3 {
+  margin-right: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.professional-doctors .card4 {
+  border: 3px solid rgba(0, 0, 0, 0.215);
+  padding: 10px 20px;
+
+  flex-basis: 24%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.professional-doctors .card-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.professional-doctors .btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(22, 50, 91);
+  border: none;
+  /* margin-top: auto; */
+}
+
+.btn:hover {
+  background-color: rgb(36, 76, 128);
+}
+
+.recommended-hospitals {
+  margin: 40px 50px;
+  /* margin-bottom: 50px; */
+}
+.hospitals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hospitals .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+}
+.hospitals img {
+  width: 200px;
+}
+
+.hospitals .card-title {
+  font-size: 20px;
+  text-align: center;
 }
